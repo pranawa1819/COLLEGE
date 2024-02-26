@@ -1,4 +1,4 @@
-//1.	WAP to simulate a Turing Machine that accepts language L= {WW^r|n>=1} over alphabet {a,b} using c++.
+//4.	WAP to simulate a Turing Machine that accepts language L= {WW^r|n>=1} over alphabet {a,b} using c++.
 
 #include <iostream>
 #include <cstring>
