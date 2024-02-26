@@ -1,3 +1,4 @@
+// 2. WAP to simulate a Turing Machine that accepts language L= {a^2nb^n |n>=1} over alphabet {a,b} using c++.
 #include <iostream>
 #include <cstring>
 
