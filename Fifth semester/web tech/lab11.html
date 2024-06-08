@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab11</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            /* Ensure body fills the viewport height */
+        }
+       
+
+        #logo {
+            height: 70px;
+            width: 70px;
+        }
+
+        .logocontainer {
+            padding: 10px;
+            background-color: #eac784;
+            border: 2px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFF url(BR.jpg) no-repeat center center;
+            background-size: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #firstheader {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Gwendolyn';
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #401F20;
+            overflow: hidden;
+            border: 5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+        }
+
+        .nav-left a,
+        .nav-right a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: 'Dancing Script';
+            font-size: 24px;
+        }
+
+        .nav-left a:hover,
+        .nav-right a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .banner {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .main-content {
+            width: 75%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5px;
+        }
+
+        #sideheader {
+            font-family: 'Montserrat';
+        }
+
+        .inline-logo {
+            vertical-align: middle;
+            height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logocontainer">
+        <img src="baskin-robbins-logo.png" alt="logoshere" id="logo">
+        <h1 id="firstheader">Baskin Robbins</h1>
+    </div><br>
+
+    <nav>
+        <div class="nav-left">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="#signup">Sign Up</a>
+            <a href="#login">Log In</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        Welcome to Baskin <img src="newlogo.png" alt="logoshere" class="inline-logo"> Robbins!
+        <p style="font-family: 'Montserrat'; font-size:18px;">Your go-to spot for fresh, creamy ice cream and delightful treats.
+            Savor our handcrafted flavors in a cozy setting. Join us for an unforgettable ice cream experience.</p>
+    </div>
+    <div class="content-container">
+        <div class="sidebar">
+            <h2 id="sideheader">Try Out These!</h2>
+            <ul>
+                <li><a href="#link1">Special Offers</a></li>
+                <li><a href="#link2">Featured Items</a></li>
+                <li><a href="#link3">Blog</a></li>
+                <li><a href="#link4">Customer Review</a></li>
+                <li><a href="#link5">Fact Sheets</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2 id="sideheader">Ice-Cream</h2>
+            <ul>
+                <li>
+                    <h3 style="font-family: 'Dancing Script'; font-size:30px;">Blue's Boardwallk Bash</h3>
+                    <p> Blue raspberry flavored ice cream with oreo cookies pieces & blue cotton candy swirls </p>
+                    <p>Single Scoop:$5.00</p>
+                    <p>Double Scoop:$10.00</p>
+                </li>
+                <li>
+                    <h3 style="font-family: 'Dancing Script'; font-size:30px;">Coffee Almond Fudge</h3>
+                    <p>Roasted almonds and a coffee flavored </p>
+                    <p>Single Scoop:$3.50</p>
+                    <p>Double Scoop:$7.00</p>
+                </li>
+                <li>
+                    <h3 style="font-family: 'Dancing Script'; font-size:30px;">Chocolate Chip Cookie Dough</h3>
+                    <p>Vanilla flavored ice cream with cookie dough and chocolate flavored chips.</p>
+                    <p>Single Scoop:$2.50</p>
+                    <p>Double Scoop:$5.00</p>
+                </li>
+                <li>
+                    <h3 style="font-family: 'Dancing Script'; font-size:30px;">Rainbow Sherbet</h3>
+                    <p>Raspberry, pineapple, and orange flavored sherbet</p>
+                    <p>Single Scoop:$4.00</p>
+                    <p>Double Scoop:$8.00</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Baskin Robbins. All rights reserved.
+    </footer>
+</body>
+
+</html>

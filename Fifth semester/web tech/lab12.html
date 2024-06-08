@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab12</title>
+</head>
+
+<body>
+
+    <h2 style="font-family: 'Georgia';">Click the button to display your full name:</h2>
+
+    <button id="displayButton">Display Name</button>
+
+    <p id="fullName"></p>
+
+    <script>
+        // Function to display full name
+        function displayName() {
+            var fullName = "Pranawa K.C"; // Change this to your actual full name
+            document.getElementById("fullName").innerHTML = fullName;
+        }
+        // Event listener for button click
+        document.getElementById("displayButton").addEventListener("click", displayName);
+    </script>
+
+</body>
+
+</html>
