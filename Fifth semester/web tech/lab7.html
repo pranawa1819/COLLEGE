@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <style>
+        form {
+
+            border: 2px solid #0b0000;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            line-height: 25px;
+            background-color: white;
+            position: relative;
+        }
+
+        .form-header {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            text-align: center;
+        }
+
+        .form-header img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            /* Indicate that the image is clickable */
+        }
+
+        .form-header input[type="file"] {
+            display: none;
+            /* Hide the file input */
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(38, 255, 0);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(2, 67, 2);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <h1 align="center"><u>Student Registartion Form</u></h1>
+        <div class="form-header">
+            <img id="profileImage" src="https://via.placeholder.com/100" alt="Click to upload photo"
+                onclick="document.getElementById('fileInput').click();">
+            <label for="photo"><b>PHOTO</b></label>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event);">
+        </div>
+
+        <label for="fname"><b>FULL NAME:</b></label>
+        <input type="text" name="fname"><br>
+        <label for="DOB"><b>DATE OF BIRTH:</b></label>
+        <input type="date" name="DOB"><br>
+        <label for="Phone"><b>PHONE NUMBER:</b> </label>
+        <input type="tel" name="phone"><br>
+        <label for="Email"><b>EMAIL: </b></label>
+        <input type="email" name="mail"><br>
+        <label for="Gender"><b>GENDER: </b></label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female<br>
+        <label for="LocalAddress"><b>Local Address:</b></label>
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="ResidentalAddress"><b>Residental Address:</b></label><br>
+        <textarea id="LocalAddress" name="LocalAddress" rows="3" cols="21">
+        </textarea>
+        <textarea id="ResidentalAddress" name="ResidentalAddress" rows="3" cols="21">
+        </textarea><br>
+        <label for="Last"><b>Last School:</b></label>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="Last"><b>Last College:</b></label><br>
+        <textarea id="School" name="school" rows="3" cols="21"> </textarea>
+        <textarea id="college" name="college" rows="3" cols="21"> </textarea>
+        <br><br>
+        <u><b>I would like to register for the following course:</b></u><br>
+        <input type="checkbox" name="course" value="Bsc.CSIT">Bsc.CSIT
+        <input type="checkbox" name="course" value="BCA">BCA
+        <input type="checkbox" name="course" value="BIM">BIM
+        <input type="checkbox" name="course" value="BHM">BHM
+        <input type="checkbox" name="course" value="BBM">BBM<br><br>
+        <label for="studentsignature" style="font-family:Brush Script MT; font-size: 150%;">Student
+            Signature:</label><br>
+        <canvas id="signature" height="80" width="150" style="border: 1px solid black"></canvas><br>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

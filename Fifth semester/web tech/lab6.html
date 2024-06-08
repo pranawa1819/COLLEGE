@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab6</title>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        .face {
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            width: 10%;
+        }
+
+        .container {
+            margin: 0px auto;
+            width: 20%;
+            background-color:   #bcb0d3;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: 'Times New Roman';
+            box-shadow: 0px 0px 20px 1.5px   #726589;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        table,th,tr,td{
+            border:2px solid black;
+            border-collapse: collapse;
+            margin-top:-25%;
+            margin-left: 100px;
+            padding: 8px;
+            }
+            th{
+            background-color: #b2c2bf;
+            border:1px solid black;
+            }
+            form{
+                border: 2px solid whitesmoke;
+                width : 20%;
+                margin-left: 100px;
+                margin-top: 50px;
+                text-align: left;
+                padding: 10px;
+                line-height: 25px;
+                border-radius: 10px;
+                background-color: lightblue;
+                box-shadow: 0px 0px 20px 1.5px lightblue;
+            }
+     </style>
+  </head>
+        <body>
+            <div class="container">
+               <h1 align="center" style="color:#563f46;"><b><u>My Personal Info</u></b></h1>
+               <img src="images.png" alt="Images" class="center"><br>
+               <ul type="circle" style ="font-family:Arial">
+                 <li>Name: Pranawa K.C</li>
+                 <li>Address: Bansbari, Kathmandu</li>
+                 <li>Email: pranawakc187@gmail.com</li>
+                 <li>Course: Bsc.CSIT</li>
+                </ul>
+                <h2><b>Contact Me:</b></h2>
+            <div class="links">
+                <a href="https://www.facebook.com/">
+                <img src="facebook.png" class="face" alt="Facebook">
+                 </a>&emsp;
+                <a href="https://www.instagram.com/">
+                <img src="social.png" class="face" alt="Instagram">
+                </a>&emsp;
+                <a href="https://www.gmail.com/">
+                <img src="gmail.png" class="face" alt="Gmail">
+                </a>
+             </div>
+            </div>
+         <table cellpadding="5px">
+             <caption><b>Table</b></caption>
+            <thead> 
+            <tr>  
+            <th >S.N</th>
+              <th >Friends Name</th>
+              <th >Age</th>
+              <th >Hobby</th>
+            </tr>
+            </thead>
+             <tr>
+              <td>1</td>
+              <td>Pratyusha Chapagain</td>
+              <td>20</td>
+              <td>Travelling</td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Yunika Shrestha</td>
+                <td>19</td>
+                <td>Reading</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Samriddhi Bhattarai</td>
+                <td>17</td>
+                <td>Singing</td>
+              </tr>
+        </table>
+             <br><br>
+   
+        <form>
+            <h2 align ="center">Employee Registration Form</h2>
+            <label for="name">FULL NAME:</label>
+            <input type="text" id="name" name="name" required> <br>
+            <label for="Gender">GENDER: </label>
+            <input type="radio"  name="Gender" value="Male">Male
+            <input type="radio"  name="Gender" value="Female">Female<br>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for = "department"> Department: </label>
+            <select id = "department" name = "department">
+                <option value = "">Select the departments</option>
+                <option value = "Designer">Designer</option>
+                <option value = "Marketing">Marketing</option>
+                <option value = "IT">IT</option>
+                <option value = "Accountant">Accountant</option>
+            </select>
+            <br>
+            <input type = "submit" value = "Submit">
+        </form>
+        </body>
+        </html>
