@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab14</title>
+    <style>
+         #design {
+            padding: 6px;
+            background-color: rgb(233, 246, 250);
+            border: 4px;
+            border-radius: 5px;
+            
+        }
+
+        .container{
+            border:1px solid whitesmoke;
+            border-radius: 5px;
+            background-color: lightcoral;
+            margin-left:auto;
+            margin-right:auto;
+            padding:20px;
+            width:25%;
+            box-shadow: 0 0 20px 1.5px lightcoral;
+        }
+        button {
+            padding: 3px;
+            background-color: gray;
+            border: 1px;
+            border-radius: 10px;
+            font-family: 'Rajdhani';
+            font-weight: bold;
+            width:30%;
+            height:30%;
+            text-align: center;
+            font-size: larger;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(151, 155, 151);
+        }
+    </style>
+</head>
+<body>
+    <h2 align = "center">Code using JavaScript function</h2>
+    <div class="container">
+        <label for="firstValue" >Enter the First value for Multiplication:</label><br><br>
+        <input type="number" id ="design" name="firstValue"><br><br>
+        <label for="secondValue">Enter the Second value for Multiplication:</label><br><br>
+        <input type="number" id ="design" name="secondValue"><br><br>
+        <div class ="button">
+        <button type="button" value="Multiply" onclick="multiplyValues()">Multiply<br><br>
+        </div><br>
+        <label for="result">Result:</label><br><br>
+        <input type="text"  id ="design" name="result" readonly>
+    </div>
+    <script>
+        function multiplyValues() {
+            var a = document.getElementById("firstValue").value;
+            var b = document.getElementById("secondValue").value;
+            var result = a * b;
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+</html>
