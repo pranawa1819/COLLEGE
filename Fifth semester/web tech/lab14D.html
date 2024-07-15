@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Popup Functions with CSS</title>
+    <style>
+        .container {
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            background-color:  #80aaff;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 20px;
+            width: 25%;
+            box-shadow: 0px 5px 15px #80aaff;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px ;
+            border: 1px solid black;
+            background-color: rgb(23, 119, 179);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 45%;
+        }
+        button:hover {
+            background-color: white;
+            color:  black;
+            border: 1px solid  #b3b3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">JavaScript Popup Functions</h1>
+        <p>Click the buttons below to see the popup functionality.</p>
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="showPrompt()">Show Prompt</button>
+        <button onclick="showConfirm()">Show Confirm</button>
+    </div>
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+
+        function showPrompt() {
+            let userName = prompt("Please enter your name:", "John Doe");
+            if (userName !== null && userName !== "") {
+                alert("Hello, " + userName + "!");
+            } else {
+                alert("You didn't enter your name.");
+            }
+        }
+
+        function showConfirm() {
+            let userConfirmed = confirm("Do you want to proceed?");
+            if (userConfirmed) {
+                alert("You chose to proceed!");
+            } else {
+                alert("You chose not to proceed.");
+            }
+        }
+
+       
+    </script>
+</body>
+</html>

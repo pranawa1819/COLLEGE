@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event Handling Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        body {
+            font-family: 'Playfair Display';
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #hoverDiv {
+            width: 50%;
+            height: 200px;
+            background-color: lightblue;
+            line-height: 200px;
+            margin: 20px auto;
+            position: relative;
+        }
+        #hoverText {
+            display: none;
+            font-size: larger;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #para {
+            font-size: x-large;
+            margin: 20px;
+        }
+        #inputField {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #displayDiv {
+            width: 300px;
+            height: 30px;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery:</h1>
+    <p id="para">
+        jQuery is a fast, small, and feature-rich JavaScript library.
+        It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with 
+        an easy-to-use API that works across a multitude of browsers. The motto of jQuery is "Write less, do more,"
+        which emphasizes its goal of simplifying the coding process.
+    </p>
+
+    <div id="hoverDiv">
+        <div id="hoverText">Hello !!! Hover over me to see the effect.</div>
+    </div>
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <div id="displayDiv"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hoverDiv").mouseenter(function(){
+                $(this).css("background-color", "yellow");
+                $("#hoverText").fadeIn("slow");
+            }).mouseleave(function(){
+                $(this).css("background-color", "lightblue");
+                $("#hoverText").fadeOut("slow");
+            });
+
+            $("#inputField").keypress(function(event){
+                var char = String.fromCharCode(event.which);
+                $("#displayDiv").text("You pressed: " + char);
+            });
+        });
+    </script>
+</body>
+</html>

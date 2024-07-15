@@ -1,0 +1,23 @@
+			<?xml version="1.0"?>
+		
+  <student>
+  <info>
+  <SN>1</SN>
+  <Name>Tina Thapa</Name>
+  <Age>20</Age>
+   <Gender>Female</Gender>
+  <Address>Bhaktapur</Address>
+  <PhoneNumber>9841356762</PhoneNumber>
+  <Faculty>BSC.CSIT</Faculty>
+  </info>
+  
+   <info>
+  <SN>2</SN>
+  <Name>Karan Shrestha</Name>
+  <Age>21</Age>
+  <Gender>Male</Gender>
+  <Address>Bagbazar</Address>
+  <PhoneNumber>9841567678</PhoneNumber>
+  <Faculty>BCA</Faculty>
+  </info>
+  </student>

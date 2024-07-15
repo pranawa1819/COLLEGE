@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAB 16</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        .container{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(173, 111, 35);
+            padding:10px;
+            width:30%;
+        }
+        #demo{
+            font-family: Playfair;
+            font-size: larger;
+            margin-top: 2%;
+            margin-top:2rem;
+        }
+        #top{
+            font-family: Verdana;
+            text-align: center;
+            margin-top: -15%;
+            margin-left: 15%;
+           }
+        #main{
+            font-family: Verdana;
+            text-align: center;
+            margin-left: 15%;
+           }
+        .design{
+            border: 1px solid whitesmoke;
+            border-radius: 8px;
+            background-color: bisque;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            padding: 20px;
+            width: 25%;
+            box-shadow: 0 0 20px 1.5px bisque;
+           }
+
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1>JavaScript Array Operations</h1>
+        <p style = "font-size: large;font-family: Cambria;">Check the results of various array operations below:</p>
+        
+    </div>
+    <div id ="demo"></div>
+
+    <h1 id="top">Different Method of Strings</h1>
+    <div id="main"></div>
+
+    <div class="design">
+    <h1>Date Object Example</h1>
+    <button onclick="displayCurrentDateTime()">Display Current Date and Time</button>
+    <p id="currentDateTime"></p>
+
+    <button onclick="displayFormattedDate()">Display Formatted Date</button>
+    <p id="formattedDate"></p>
+
+    <h2>Calculate Days Between Two Dates</h2>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate">
+    <br>
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate">
+    <br>
+    <button onclick="calculateDaysBetweenDates()">Calculate Days</button>
+    <p id="daysBetween"></p>
+</div>
+
+    <script>
+         const cars = ["Saab", "Volvo", "BMW"];
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+         let size = fruits.length;
+         document.getElementById("demo").innerHTML = "The different types of car are:"+ cars +
+          "<br> The different types of fruits are:"+ fruits +
+          "<br> The length of an array of fruits is: "+size;
+
+          const name = "PRANAWA";
+          let size2 = name.length; 
+          let letter = name.charAt(2);
+          let a = name.charAt(3);
+          document.getElementById("main").innerHTML = "Name: " + name + "<br> The length of name is: " + size2 +
+              "<br> The letter at index 2 is: " + letter+ 
+              "<br> The letter at index 4 is: " + a;
+
+              function displayCurrentDateTime() {
+                var currentDate = new Date();
+                var dateTimeString = "Current Date and Time: " + currentDate.toString();
+                document.getElementById("currentDateTime").innerHTML = dateTimeString;
+            }
+    
+            function displayFormattedDate() {
+                var currentDate = new Date();
+                var year = currentDate.getFullYear();
+                var month = currentDate.getMonth() + 1; // Months are zero-based
+                var day = currentDate.getDate();
+                var formattedDate = "Formatted Date: " + year + "-" + month + "-" + day;
+                document.getElementById("formattedDate").innerHTML = formattedDate;
+            }
+    
+            function calculateDaysBetweenDates() {
+                var startDate = new Date(document.getElementById("startDate").value);
+                var endDate = new Date(document.getElementById("endDate").value);
+                var timeDifference = endDate - startDate;
+                var daysDifference = timeDifference / (1000 * 3600 * 24);
+                document.getElementById("daysBetween").innerHTML = "Days Between: " + daysDifference;
+            }
+
+    </script>
+</body>
+</html>

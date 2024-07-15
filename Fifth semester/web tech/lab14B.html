@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Second lab of 14</title>
+    </head>
+    <style>
+      
+     @import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap');
+
+        #firstmain,#secondmain,#thirdmain,#fourthmain {
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            background-color: #FFC0CB;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            width: 25%;
+            box-shadow: #FFC0CB 0px 5px 15px;
+            font-family: 'Playwrite IS';
+            margin-top:1rem;
+        }
+    </style>
+    <body>
+        <h1 align="center">Assignment Operator</h1>
+        <div id ="firstmain"></div>
+        <div id ="secondmain"></div>
+        <div id ="thirdmain"></div>
+        <div id ="fourthmain"></div>
+        <script>
+            let a = 10;
+            let b = 5;
+
+            let c = a;
+            c++;
+            document.getElementById("firstmain").innerHTML=" Value of c after assignment: " + c;
+            
+            a += b;
+            document.getElementById("secondmain").innerHTML=" Value of a after assignment: " + a;
+
+            a *= b;
+            document.getElementById("thirdmain").innerHTML=" Value of a after assignment: " + a;
+
+            let x = 10;
+            x /= 5;
+            document.getElementById("fourthmain").innerHTML=" Value of x after assignment: " + x;
+         
+        </script>
+    </body>
+</html>
