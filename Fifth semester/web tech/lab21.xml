@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letter [
+    <!ENTITY author "John Doe">
+    <!ENTITY date "July 14, 2024">
+    <!ENTITY recipient "Jane Smith">
+]>
+
+<letter>
+    <header>
+        <sender>&author;</sender>
+        <recipient>&recipient;</recipient>
+        <date>&date;</date>
+    </header>
+    <subject>Greetings</subject>
+    <body>
+        Dear &recipient;
+        I hope this message finds you well. This is just a friendly letter to say hello.
+        Sincerely,
+        &author;
+    </body>
+</letter>
