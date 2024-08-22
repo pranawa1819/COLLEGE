@@ -61,22 +61,14 @@ int main() {
 
     // Output the results
     cout << "Original Message = " << message;
-    cout << "\n"
-         << "p = " << p;
-    cout << "\n"
-         << "q = " << q;
-    cout << "\n"
-         << "n = pq = " << n;
-    cout << "\n"
-         << "phi = " << phi;
-    cout << "\n"
-         << "e = " << e;
-    cout << "\n"
-         << "d = " << d;
-    cout << "\n"
-         << "Encrypted message = " << c;
-    cout << "\n"
-         << "Decrypted message = " << m << endl;
+    cout << "\n p = " << p;
+    cout << "\n q = " << q;
+    cout << "\n n = pq = " << n;
+    cout << "\n phi = " << phi;
+    cout << "\n e = " << e;
+    cout << "\n d = " << d;
+    cout << "\n Encrypted message = " << c;
+    cout << "\n Decrypted message = " << m << endl;
 
     return 0;
 }
